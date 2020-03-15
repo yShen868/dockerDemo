@@ -148,7 +148,7 @@ public class Test2 {
 
     @RequestMapping("/download")
     public String downLoad(HttpServletResponse response) throws UnsupportedEncodingException {
-        String filename = "第13天_10_对象序列化工具类实现及项目业务对象加入缓存测试第1版完成.mp4";
+        String filename = "13.pdf";
         String filePath = "D:\\javak课件";
         File file = new File(filePath + "/" + filename);
         if (file.exists()) {

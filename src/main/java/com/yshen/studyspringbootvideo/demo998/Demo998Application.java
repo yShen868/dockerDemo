@@ -11,6 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
+@MapperScan(basePackages ={"com.yshen.studyspringbootvideo.demo998.mapper"})
 //@ComponentScan(basePackages = {"com.yshen.studyspringbootvideo.demo998.config"})
 //@MapperScan("com.yshen.s")
 public class Demo998Application {

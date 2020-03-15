@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.yshen.studyspringbootvideo.demo998.Demo998ApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.568 s - in com.yshen.studyspringbootvideo.demo998.Demo998ApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.163 s - in com.yshen.studyspringbootvideo.demo998.Demo998ApplicationTests

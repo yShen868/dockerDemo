@@ -1,6 +1,5 @@
 server:
-  port: 8080
-
+  port: 8090
 
 
 
@@ -8,9 +7,9 @@ spring:
   datasource: #数据源配置
     druid:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://118.31.66.30:12345/demo998?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
+      url: jdbc:mysql:///test?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
       username: root
-      password: 123456
+      password: 123
       max-active: 10
       min-idle: 5
       max-wait: 5000
@@ -25,12 +24,16 @@ spring:
         url-pattern: "/druid/*"
 
 
-  devtools:
-    restart:
-      enabled: true  #设置开启热部署
-      additional-paths: src/main/java #重启目录
-      exclude: WEB-INF/**
+#  devtools:
+#    restart:
+#      enabled: true  #设置开启热部署
+#      additional-paths: src/main/java #重启目录
+#      exclude: WEB-INF/**
   freemarker:
     cache: false    #页面不加载缓存，修改即时生效
 
 
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.yshen.studyspringbootvideo.demo998.model
